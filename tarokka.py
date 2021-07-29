@@ -22,7 +22,7 @@ common_deck = {
         'represents': 'The brutal and barbaric side of warfare—bloodlust—those with a bestial nature'},
     8: {
         'name': 'Hooded One',
-        'represents': 'Bigotry, intolerance, and xenophobia—a mysterious presence or newcomer',
+        'represents': 'Bigotry, intolerance, and xenophobia—a mysterious presence or newcomer'},
     9: {
         'name': 'Dictator',
         'represents': 'All that is wrong with government and leadership—those who rule through fear and violence'},
