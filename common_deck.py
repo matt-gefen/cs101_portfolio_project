@@ -1,3 +1,11 @@
+""" 
+The tarokka common deck represents the possible predictions for the three item location predictions :
+1. Tome of Strahd
+2. Holy Symbol of Ravenkind
+3. The Sunsword
+
+"""
+
 common_deck = {
     1: {
         'name' : 'Warrior', 

@@ -1,3 +1,11 @@
+""" 
+The tarokka common deck represents the possible predictions for the two key gameplay predictions :
+1. Strahd's Enemy
+2. Strahd's Endgame Location in Ravenloft
+
+"""
+
+
 high_deck = {
     1:{
         'name':'Artifact',
