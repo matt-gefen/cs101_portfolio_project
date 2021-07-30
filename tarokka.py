@@ -20,22 +20,55 @@ class Drawing:
             self.card = common_deck[random_drawing]
         else:
             random_drawing = random.randrange(1,high_deck_len+1,1)
-            self.card = high_deck[random_drawing]
-        
+            self.card = high_deck[random_drawing] 
 
     def reading(self):
         return self.drawings[self.reading_num]['reading']
+    
+    def represents(self):
+        return 'The {} represents: {}'.format(self.card['name'], self.card['represents'])
 
+    def player_prediction(self):
+        if self.reading_num < 4:
+            return self.card['pred_location']
+        elif self.reading_num == 4:
+            return self.card['enemy_pred']
+        else:
+            return self.card['castle_location_pred']
+    def dm_info(self):
+        if self.reading_num < 4:
+            return self.card['dm_location']
+        elif self.reading_num == 4:
+            return self.card['enemy_dm']
+        else:
+            return self.card['castle_location_dm']
 
+drawing_1 = Drawing(1)
+drawing_2 = Drawing(2) 
+drawing_3 = Drawing(3) 
+drawing_4 = Drawing(4) 
+drawing_5 = Drawing(5)
 
-test_drawing = Drawing(1)
-print(test_drawing.card)
+drawings = [drawing_1,drawing_2,drawing_3,drawing_4,drawing_5]
+
+def fortune_telling():
+    for drawing in drawings:
+        print(drawing.reading(),'\n')
+        print(drawing.represents(),'\n')
+        print(drawing.player_prediction())
+        print('-----')
+
 
 def initiate_reading():
     print('\nMagic flames cast a reddish glow over the interior of this tent, revealing a low table covered in a black velvet cloth. Glints of light seem to flash from a crystal ball on the table as a hunched figure peers into its depths. As the crone speaks, her voice crackles like dry weeds. "At last you have arrived!" Cackling laughter bursts like mad lightning from her withered lips.\n')
 
-    print('I am Madame Eva, and I sense your threads of your destinies. Tell me, outsiders...What are your names?\n')
-    name = input()
-    print('\nHello {}\n'.format(name))
+    print('I am Madame Eva, and I sense your threads of your destinies. Tell me, outsiders...Would you like me to divine your futures?\n')
+    print('Y or N')
+    answer = input()
+    if answer == 'Y':
+        fortune_telling()
+    else:
+        print('Then I hope your travels in Barovia will not cause you much suffering. Farewell')
 
 
+initiate_reading()

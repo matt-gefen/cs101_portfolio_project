@@ -205,6 +205,6 @@ common_deck = {
         'dm_location': 'The treasure is hidden in the master bedroom of Wachterhaus (chapter 5, area N4o).'},
     40:{
         'name': 'Abjurer', 
-        'represents':'Those guided by logic and reasoning—warns of an overlooked clue or piece of information',
+        'represents':'Those guided by logic and reasoning — warns of an overlooked clue or piece of information',
         'pred_location':'I see a fallen house guarded by a great stone dragon. Look to the highest peak.',
         'dm_location':'The treasure lies in the beacon of Argynvostholt (chapter 7, area Q53). “Great stone dragon” refers to the statue in area Q1.'}}
