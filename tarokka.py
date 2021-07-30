@@ -63,9 +63,10 @@ def initiate_reading():
     print('\nMagic flames cast a reddish glow over the interior of this tent, revealing a low table covered in a black velvet cloth. Glints of light seem to flash from a crystal ball on the table as a hunched figure peers into its depths. As the crone speaks, her voice crackles like dry weeds. "At last you have arrived!" Cackling laughter bursts like mad lightning from her withered lips.\n')
 
     print('I am Madame Eva, and I sense your threads of your destinies. Tell me, outsiders...Would you like me to divine your futures?\n')
-    print('Y or N')
+    print('Y or N\n')
     answer = input()
     if answer == 'Y':
+        print('\n')
         fortune_telling()
     else:
         print('Then I hope your travels in Barovia will not cause you much suffering. Farewell')
